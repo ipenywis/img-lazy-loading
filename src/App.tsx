@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import { BrowserLazyLoading } from "./components/browserLazyLoading";
 import styled from "styled-components";
+import { ReactLazyLoading } from "./components/reactLazyLoading";
+import { BlurHashLazyLoading } from "./components/blurhashLazyLoading";
 
 const AppContainer = styled.div`
   display: flex;
@@ -16,7 +18,9 @@ function App() {
   return (
     <AppContainer>
       <h2>Lazy Loading Images</h2>
-      <BrowserLazyLoading />
+      {/* <BrowserLazyLoading /> */}
+      {/* <ReactLazyLoading /> */}
+      <BlurHashLazyLoading />
     </AppContainer>
   );
 }
