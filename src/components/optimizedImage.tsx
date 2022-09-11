@@ -49,16 +49,16 @@ function OptimizedImage(props: IOptimizedImageProps) {
         beforeLoad={handleLoadStarted}
       />
       {!isLoaded && isLoadStarted && (
-        <LazyLoadComponent>
-          <StyledBlurhash
-            hash={image.blurhash}
-            width={333}
-            height={500}
-            resolutionX={32}
-            resolutionY={32}
-            punch={1}
-          />
-        </LazyLoadComponent>
+        // <LazyLoadComponent>
+        <StyledBlurhash
+          hash={image.blurhash}
+          width={333}
+          height={500}
+          resolutionX={32}
+          resolutionY={32}
+          punch={1}
+        />
+        // </LazyLoadComponent>
       )}
     </ImageWrapper>
   );

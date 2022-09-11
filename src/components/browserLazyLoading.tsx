@@ -68,7 +68,7 @@ function BrowserLazyLoading() {
     <ImagesContainer>
       {images.map((url: string) => (
         //width and height on images are required for the browser to be able to calculate the viewport
-        <Image
+        <img
           key={url}
           src={url}
           loading="eager"
